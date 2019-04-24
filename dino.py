@@ -3,9 +3,7 @@
 
 class Dino:
     patas = 4
-    nombre = None
-    def __init__(self, canti_patas, un_nombre):
-        self.patas = canti_patas
+    def __init__(self, un_nombre):
         self.nombre = un_nombre
         print("Hola soy un dinosaurio",", me llamo", self.nombre," y tengo", self.patas, "patas")
 
@@ -14,5 +12,8 @@ class Dino:
     
     def set_patas(self, cantidad):
         self.patas = cantidad
+    
+    def cortar_pata(self):
+        self.patas = self.patas - 1
 
-pepito = Dino(4, "Pepito")
+pepito = Dino("Pepito")
